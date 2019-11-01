@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>女方检查项目：</h2>
+    <p>
+        1. <input type="text">年<input type="text">月<input type="text">日 E2<input type="text">pmol/l,
+        FSH<input type="text">u/l, LH<input type="text">u/l, P<input type="text">sng/ml
+    </p>
+    <p>2. <input type="text">年<input type="text">月<input type="text">日（月经第<input type="text">天）
+        超声：子宫<input type="text">×<input type="text">×<input type="text">mm3 内膜<input type="text">mm<input type="text">级
+        □欠均匀，右侧卵巢<input type="text">×<input type="text">mm2 ，左侧卵巢<input type="text">×<input type="text">mm2
+    </p>
+    <p>
+        右侧卵泡<input type="text">×<input type="text">mm2 左侧卵泡<input type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <input class="ml-4" type="text">×<input type="text">mm2
+        <input class="ml-4" type="text">×<input type="text">mm2
+    </p>
+    <p>
+        <span class="ml-4">≤11mm<input type="text">枚</span>
+        <span class="ml-4">≤11mm<input type="text">枚</span>
+    </p>
+    <p>
+        <input type="checkbox">无回声  <input type="checkbox">高回声  <input type="checkbox">低回声  
+        <input type="checkbox">混合回声  <input type="checkbox">息肉  <input type="checkbox">肌瘤 
+        <input type="checkbox">囊肿  <input type="checkbox">积水
+        位置<input type="text">×<input type="text">mm
+    </p>
+
+    <button onclick="submit()">Submit</button>
+</body>
+<style>
+    input[type="text"] {
+        width: 30px;
+        margin: 2px;
+    }
+
+    input.ml-4 {
+        margin-left: 6em;
+    }
+
+    .ml-4 {
+        margin-left: 4em;
+    }
+</style>
+
+<script>
+    function submit() {
+        let inputs = document.querySelectorAll('input')
+        let values = []
+        for (let i=0; i<inputs.length; i++) values[i] = inputs[i].value
+        let body = values.join('#')
+        fetch('https://www.baidu.com', {
+            method: 'POST',
+            body: body
+        })
+    }
+</script>
+
+</html>
