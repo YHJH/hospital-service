@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Medical Recorde -Day1</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+    <!-- Custom styles for this template-->
+    <link href="/css/sb-admin-2.min.css" rel="stylesheet" />
+    <style>
+        .lg-input {
+            width: 100px;
+        }
+
+        .md-input {
+            width: 48px;
+        }
+
+
+    </style>
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">辅助生殖系统</h1>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-lg">
+
+                <!-- Basic Card Example -->
+                <!--第一页示例-->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">辅助生殖女方</h6>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">现病史</span>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="input-group">
+                                            <ul class="list-group">
+
+
+                                                <li class="list-group-item" >
+                                                    <select name="marriage"  >
+                                                        <option value = "married">结婚</option>
+                                                        <option value = "contraception">解除避孕</option>
+                                                    </select>
+                                                    <input class="lg-input" type="text" maxlength="100"  />年未孕
+
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    2. LMP：<input class="lg-input datetimepicker1" type="text"
+                                                                  placeholder="年月日" />，既往月经
+
+                                                    <select name="menses"  >
+                                                        <option value = "regular">规则</option>
+                                                        <option value = "irregular">欠规则</option>
+                                                        <option value="medical">药物依赖</option>
+                                                    </select>
+                                                    <input class="md-input" type="text" />年，初潮
+                                                    <input
+                                                        class="lg-input"
+                                                        type="text" />岁，月经<input
+                                                        class="lg-input"
+                                                        type="text" />天干净，月经周期
+
+                                                    <input class="lg-input" type="text" />-<input class="lg-input" type="text" />天，经量：
+                                                    <select name="period"  >
+                                                        <option value = "normal">正常</option>
+                                                        <option value = "more">多</option>
+                                                        <option value="less">少</option>
+                                                    </select>，
+                                                    <input class="md-input" type="text" />年前开始约为原来
+                                                    <select name="amounts"  >
+                                                        <option value = "1/3">1/3</option>
+                                                        <option value = "1/2">1/2</option>
+                                                        <option value="痛经">痛经</option>
+                                                    </select>
+
+                                                </li>
+
+
+                                                <li class="list-group-item">
+                                                    3.
+                                                    <select name="pregnancy" >
+                                                        <option value = "足">足</option>
+                                                        <option value = "早">早</option>
+                                                        <option value = "留">留</option>
+                                                        <option value = "存">存</option>
+                                                    </select>
+
+                                                    <select name="children"  >
+                                                        <option value = "现有">现有</option>
+                                                        <option value = "领养">领养</option>
+                                                        <option value = "再婚">再婚</option>
+                                                        <option value = "与前任育有">与前任育有</option>
+                                                    </select>
+                                                    <input type="text" class="lg-input" name="childrenCount"/>子女
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <span class="text-danger">＊</span> <input class="md-input"
+                                                                                              type="text" />年<input
+                                                        class="lg-input" type="text" />月孕<input class="lg-input"
+                                                                                              type="text" />周
+                                                    <input type="checkbox" />顺产 <input type="checkbox" />剖宫产<input
+                                                        class="lg-input" type="text" />男<input class="lg-input"
+                                                                                             type="text" />女
+                                                    <input type="checkbox" />体健 <input type="checkbox" />意外
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <span class="text-danger">＊</span> <input class="md-input"
+                                                                                              type="text"/>年<input
+                                                        class="lg-input" type="text" />月宫外孕 <input type="checkbox" />左输卵管
+                                                    <input type="checkbox" />右输卵管 <input type="checkbox" />开窗取胚 <input
+                                                        type="checkbox" />切除 <input type="checkbox" />盆腔粘连松解
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <span class="text-danger">＊</span> <input class="md-input"
+                                                                                              type="text" />年<input
+                                                        class="lg-input" type="text" />月孕<input
+                                                        class="lg-input" type="text" />周 <input type="checkbox"/>胚停 <input
+                                                        type="checkbox"/>人流 <input type="checkbox"/>自然流产 <input
+                                                        type="checkbox"/>药流 <input type="checkbox"/>引产
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    4. <input class="lg-input datetimepicker1" type="text"
+                                                              placeholder="年月日"/> E2<input class="lg-input" type="text"/>pmol/l,
+                                                    FSH <input class="lg-input" type="text"/>u/l, LH<input
+                                                        class="lg-input"
+                                                        type="text"/>u/l,
+                                                    P<input class="lg-input" type="text"/>ng/ml, PRL<input
+                                                        class="lg-input"
+                                                        type="text"/>ng/ml
+                                                    ,T<input class="lg-input" type="text"/>ng/ml, AMH<input
+                                                        class="lg-input"
+                                                        type="text"/>ng/ml
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    5. <input class="lg-input datetimepicker1" type="text"
+                                                              placeholder="年月日"/>（月经第<input class="lg-input" type="text"/>
+                                                    天）超声：子宫<input class="lg-input" type="text"/>×<input class="lg-input"
+                                                                                                       type="text"/>×
+                                                    <input class="lg-input" type="text"/>mm<sup>3</sup> 内膜<input
+                                                        class="lg-input"
+                                                        type="text"/>mm
+                                                    <input class="lg-input" type="text"/>级<input type="checkbox"/>欠均匀，右侧卵巢<input
+                                                        class="lg-input"
+                                                        type="text"/>×<input
+                                                        class="lg-input" type="text"/>mm<sup>2</sup> ，左侧卵巢<input
+                                                        class="lg-input"
+                                                        type="text"/>×
+                                                    <input class="lg-input" type="text"/>mm<sup>2</sup> 窦卵泡<input
+                                                        class="lg-input"
+                                                        type="text"/>＋<input
+                                                        class="lg-input" type="text"/>枚， <input type="checkbox"/>无回声<input
+                                                        type="checkbox"/>高回声<input type="checkbox"/>低回声<input
+                                                        type="checkbox"/>混合回声<input type="checkbox"/>息肉<input
+                                                        type="checkbox"/>肌瘤<input type="checkbox"/>囊肿<input
+                                                        type="checkbox"/>积水 位置 <input
+                                                        class="lg-input" type="text"/>×<input class="lg-input"
+                                                                                             type="text"/>mm
+                                                </li>
+
+
+                                                <li class="list-group-item">
+                                                    6. <input class="lg-input datetimepicker1" type="text"
+                                                              placeholder="年月日"/>输卵管造影：左侧<input type="checkbox"/>显影<input
+                                                        type="checkbox"/>未显影<input type="checkbox"/>通而不畅<input
+                                                        type="checkbox"/>通而极不畅<input type="checkbox"/>积水，右侧<input
+                                                        type="checkbox"/>显影<input type="checkbox"/>未显影<input
+                                                        type="checkbox"/>通而不畅<input type="checkbox"/>通而极不畅<input
+                                                        type="checkbox"/>积水，<input type="checkbox"/>伴盆腔粘连。
+                                                    <input class="lg-input datetimepicker1" type="text"
+                                                           placeholder="年月日"/><input type="checkbox"/>通液<input
+                                                        type="checkbox"/>介入，<input type="checkbox"/>术后复查，<input
+                                                        type="checkbox"/>显影<input type="checkbox"/>未显影<input
+                                                        type="checkbox"/>通而不畅<input type="checkbox"/>通而极不畅<input
+                                                        type="checkbox"/>积水
+                                                    <input class="lg-input datetimepicker1" type="text"
+                                                           placeholder="年月日"/><input type="checkbox"/>宫腔镜<input
+                                                        type="checkbox"/>腹腔镜治疗<input type="checkbox"/>左侧<input
+                                                        type="checkbox"/>右侧<input type="checkbox"/>双侧输卵管<input
+                                                        type="checkbox"/>修复<input type="checkbox"/>切除<input
+                                                        type="checkbox"/>盆腔粘连松解
+                                                </li>
+
+
+                                                <li class="list-group-item">
+                                                    7. <span class="text-danger">＊</span> <input class="md-input"
+                                                                                                 type="text"/>年<input
+                                                        class="lg-input" type="text"/>月<input class="lg-input"
+                                                                                              type="text"/>日促排卵治疗<input
+                                                        type="checkbox"/>见优势卵泡，最大直径<input
+                                                        class="lg-input" type="text"/>mm。
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    8. <span class="text-danger">＊</span> <input class="md-input"
+                                                                                                 type="text"/>年<input
+                                                        class="lg-input" type="text"/>月<input class="lg-input"
+                                                                                             type="text"/>日 <input
+                                                        class="lg-input" type="text"/>医院<input type="checkbox"/>微刺激<input
+                                                        type="checkbox"/>拮抗剂<input type="checkbox"/>长方案促排，获卵<input
+                                                        class="lg-input"
+                                                        type="text"/>
+                                                    枚，<input type="checkbox"/>IVF<input type="checkbox"/>ICSI获胚<input
+                                                        class="lg-input" type="text"/>枚，<input type="checkbox"/>鲜胚<input
+                                                        type="checkbox"/>冻胚移植<input
+                                                        class="lg-input"
+                                                        type="text"/>枚，<input type="checkbox"/>未孕<input type="checkbox"/>生化<input
+                                                        type="checkbox"/>胚停<input type="checkbox"/>引产。
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    9. 年龄<input class="lg-input" type="text"/> 身高<input class="lg-input"
+                                                                                                       type="text"/>cm
+                                                    体重<input class="lg-input" type="text"/>kg　体重指数<input class="lg-input"
+                                                                                                        type="text"/>血型<input
+                                                        class="lg-input" type="text"/>型，Rh<input class="lg-input"
+                                                                                                type="text"/>染色体
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+</body>
+
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/moment/moment.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="/js/sb-admin-2.min.js"></script>
+
+<script>
+    $(function () {
+        $('.datetimepicker1').datetimepicker({
+            format: 'YYYY年MM月DD日'
+        });
+    })
+
+</script>
+
+</html>
+
+
+
+
