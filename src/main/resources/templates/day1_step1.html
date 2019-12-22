@@ -317,6 +317,234 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <label for="leftOvary">促排卵</label>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <input class="lg-input datetimepicker1" type="text"
+                                               placeholder="年月日"/>
+                                    </div>
+
+                                    <div class="col-1" >
+                                        <select name="hasCoh"  >
+                                            <option value=""></option>
+                                            <option value = "yes">有</option>
+                                            <option value = "no">无</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label>优势卵泡</label>
+                                    </div>
+
+                                    <div class="col-1" >
+                                        <select name="hasOvalation"  >
+                                            <option value=""></option>
+                                            <option value = "yes">有</option>
+                                            <option value = "no">无</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label>排卵</label>
+                                    </div>
+                                    <div class="col-2">
+                                        <label>临床结局</label>
+                                    </div>
+                                    <div class="col-1" >
+                                        <select name="result"  >
+                                            <option value=""></option>
+                                            <option value = "failed">未孕</option>
+                                            <option value="pregnancy">妊娠</option>
+                                            <option value = "biochemicalPregnancy">生化</option>
+                                            <option value = "arrestedEmbryo">胚停</option>
+                                            <option value="lateAbortion">中期引产</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <label for="operation">手术</label>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <input class="lg-input datetimepicker1" type="text" id="operation"
+                                               placeholder="年月日"/>
+                                    </div>
+                                    <div class="col-3">
+                                       <label>方式</label>
+                                        <select name="way"  >
+                                            <option value=""></option>
+                                            <option value = "yes">宫腔镜</option>
+                                            <option value = "no">腹腔镜</option>
+                                            <option value="">宫腹腔镜</option>
+                                            <option value="">开腹</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <label>输卵管</label>
+                                        <select name="way"  >
+                                            <option value=""></option>
+                                            <option value = "yes">右侧切除</option>
+                                            <option value = "no">左侧切除</option>
+                                            <option value="">双侧切除</option>
+                                            <option value="">积水通液</option>
+                                            <option value="">保守治疗</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label>子宫</label>
+                                        <select name="way"  >
+                                            <option value=""></option>
+                                            <option value = "yes">肌瘤切除</option>
+                                            <option value = "no">内膜息肉摘除</option>
+                                            <option value="">囊肿切除</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3">
+                                        <label>卵巢</label>
+                                        <select name="way"  >
+                                            <option value=""></option>
+                                            <option value = "yes">囊肿切除</option>
+                                            <option value = "no">多囊卵巢打孔</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <label>盆&nbsp;&nbsp;&nbsp;腔</label>
+                                        <select name="way"  >
+                                            <option value=""></option>
+                                            <option value = "yes">粘连松解术</option>
+                                            <option value = "no">积液积脓切除术</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-2"></div>
+                                    <div class="col-4">
+                                        <label>临床结局</label>
+                                        <select name="result"  >
+                                            <option value=""></option>
+                                            <option value = "failed">未孕</option>
+                                            <option value="pregnancy">妊娠</option>
+                                            <option value = "biochemicalPregnancy">生化</option>
+                                            <option value = "arrestedEmbryo">胚停</option>
+                                            <option value="lateAbortion">中期引产</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <label for="IUI">人工授精</label>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <input class="lg-input datetimepicker1" type="text" id="IUIDate"
+                                               placeholder="年月日"/>
+                                    </div>
+                                    <div class="col-2">
+                                        <select name="IUI"  >
+                                            <option value=""></option>
+                                            <option value = "COH">促排卵周期</option>
+                                            <option value = "NC">自然周期</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-4">
+                                        <label>临床结局</label>
+                                        <select name="result"  >
+                                            <option value=""></option>
+                                            <option value = "failed">未孕</option>
+                                            <option value="pregnancy">妊娠</option>
+                                            <option value = "biochemicalPregnancy">生化</option>
+                                            <option value = "arrestedEmbryo">胚停</option>
+                                            <option value="lateAbortion">中期引产</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <label for="IVF">体外受精</label>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <input class="lg-input datetimepicker1" type="text" id="IVFDate"
+                                               placeholder="年月日"/>
+                                    </div>
+                                    <div class="col-3">
+                                        <select name="IVF"  >
+                                            <option value=""></option>
+                                            <option value = "long">长方案</option>
+                                            <option value = "short">短方案</option>
+                                            <option value = "GnRH-A">拮抗剂</option>
+                                            <option value = "micro-stimulation">微刺激</option>
+                                            <option value = "mild-stimulation">温和刺激</option>
+                                            <option value = "ultraLong">超长方案</option>
+                                        </select>
+                                        <label>促排</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <label>获&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卵</label>
+                                        <input class="lg-input" type="text" maxlength="100"  id="or" />枚
+                                    </div>
+                                    <div class="col-3">
+                                        <label>成熟卵</label>
+                                        <input class="lg-input" type="text" maxlength="100"  id="mo" />枚
+                                    </div>
+                                    <div class="col-5">
+                                        <select name="IS"  >
+                                            <option value=""></option>
+                                            <option value = "IVF">体外受精</option>
+                                            <option value = "ICSI">单精子卵母细胞胞浆内注射</option>
+                                        </select>
+                                        <label>受精</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <label>形成胚胎</label>
+                                        <input class="lg-input" type="text" maxlength="100"  id="embryo" /><label>枚</label>
+                                    </div>
+                                    <div class="col-3">
+                                        <label>可移植</label>
+                                        <input class="lg-input" type="text" maxlength="100"  id="transferable" /><label>枚</label>
+                                    </div>
+                                    <div class="col-4">
+
+                                        <select name="transfer"  >
+                                            <option value=""></option>
+                                            <option value = "ET">新鲜</option>
+                                            <option value = "FET">冻融</option>
+                                        </select>
+                                        <label>移植</label>
+                                        <input class="lg-input" type="text" maxlength="100"  id="tranferCount" /><label>枚</label>
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-4">
+                                        <label>临床结局</label>
+                                        <select name="result"  >
+                                            <option value=""></option>
+                                            <option value = "failed">未孕</option>
+                                            <option value="pregnancy">妊娠</option>
+                                            <option value = "biochemicalPregnancy">生化</option>
+                                            <option value = "arrestedEmbryo">胚停</option>
+                                            <option value="lateAbortion">中期引产</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
