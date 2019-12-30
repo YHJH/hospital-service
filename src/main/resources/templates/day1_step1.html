@@ -73,10 +73,10 @@
                             <div class="col-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <label for="high">身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高</label>
+                                        <label for="height">身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="high" />
+                                        <input class="form-control" type="text" id="height" />
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                                       <label for="BMI">基础代谢率</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="BMI" />
+                                        <input class="form-control" type="text" id="bmi" />
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                                         <label>右</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="AFC" />
+                                        <input class="form-control" type="text" id="afcRight" />
                                     </div>
                                     <div class="col-1">
                                         <label>➕</label>
@@ -123,7 +123,7 @@
                                         <label>左</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="AFC_1" />
+                                        <input class="form-control" type="text" id="afcLeft" />
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@
                                         <label for="bFSH">基础卵泡刺激素</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="bFSH" />
+                                        <input class="form-control" type="text" id="bfsh" />
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                                         <label for="AMH">抗米勒激素</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="AMH" />
+                                        <input class="form-control" type="text" id="amh" />
                                     </div>
                                 </div>
                             </div>
@@ -202,22 +202,22 @@
                             <div class="col-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <label for="uterus_len">子宫</label>
+                                        <label for="uterusLen">子宫</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="uterus_len" />
+                                        <input class="form-control" type="text" id="uterusLen" />
                                     </div>
                                     <div class="col-1">
                                         <label>✖️</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="uterus_width" />
+                                        <input class="form-control" type="text" id="uterusWidth" />
                                     </div>
                                     <div class="col-1">
                                         <label>✖️</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="uterus_height" />
+                                        <input class="form-control" type="text" id="uterusHeight" />
                                     </div>
                                     <div class="col">
                                         <label>mm³</label>
@@ -252,7 +252,7 @@
                                         <label>右</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="follicles" />
+                                        <input class="form-control" type="text" id="folliclesRight" />
                                     </div>
                                     <div class="col-1">
                                        <label>➕</label>
@@ -261,7 +261,7 @@
                                         <label>左</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="follicles_1" />
+                                        <input class="form-control" type="text" id="folliclesLeft" />
                                     </div>
 
                                 </div>
@@ -289,7 +289,7 @@
                                         <label>✖️</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="rightOvary_1" />
+                                        <input class="form-control" type="text" id="rightOvary1" />
                                     </div>
                                     <div class="col">
                                         <label>mm²</label>
@@ -309,11 +309,26 @@
                                         <label>✖️</label>
                                     </div>
                                     <div class="col">
-                                        <input class="form-control" type="text" id="leftOvary_1" />
+                                        <input class="form-control" type="text" id="leftOvary1" />
                                     </div>
                                     <div class="col">
                                         <label>mm²</label>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="LMP">末次月经时间</label>
+                                    </div>
+                                    <div class="col">
+                                        <div class="col-2">
+                                            <input class="lg-input datetimepicker1" type="text" id="lmpDate"
+                                                   placeholder="年月日"/>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -321,7 +336,7 @@
                             <div class = "form-group" align="center">
                                 <input type="submit" value="Next" class="btn btn-primary btn-user"/>
 
-                                <input type="submit" value="Previous" class="btn btn-primary btn-user" onclick="history.back(-1);"/>
+                                <input type="submit" value="Previous" class="btn btn-primary btn-user" onclick="history.go(-1);"/>
                             </div>
                         </form>
                     </div>
